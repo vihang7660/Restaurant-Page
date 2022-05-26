@@ -7,29 +7,26 @@ button {
     height: 34px;
     width: 110px;
     border-radius: 14px;
-    background-color: #0284c7;
+    background-color: #358bb6;
     border: none;
     color: #f8fafc;
     font-weight: 600;
     cursor: pointer;
+    font-size: 18px;
 }
 
-.main {
-    position: fixed;
-    top: 10px;
-    left: 20px;
+button:hover {
+    background-color: #0b7cb4;
 }
 
-.menu {
+.header {
     position: fixed;
-    top: 10px;
-    left: 150px;
-}
+    display: grid;
+    justify-items: center;
+    grid-auto-flow: column;
+    grid-template-columns: 33vw 33vw 33vw;
 
-.contact {
-    position: fixed;
-    top: 10px;
-    left: 280px;
+
 }
 
 
@@ -38,29 +35,31 @@ button {
 }
 
 body {
-    background-image: url('https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg');
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
     display: grid;
     justify-content: center;
 }
 
 .info {
     display: grid;
-    max-width: 60vw;
+    max-width: 65vw;
     gap: 40px;
     justify-items: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.6)
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
 }
 
 .menuInfo {
     display: grid;
     background-color: rgba(0, 0, 0, 0.6);
-    max-width: 60vw;
+    max-width: 65vw;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     color: white;
     font-family: sans-serif;
     font-size: 22px;
+    border-radius: 50px;
 
 }
 
@@ -74,10 +73,11 @@ h1 {
 }
 
 .foodPic {
-    /* display: flex; */
     height: 200px;
     width: 200px;
-    padding: 20px;
+    /* padding: 20px; */
+    border-radius: 20px;
+    border: 20px solid rgb(192, 172, 60);
 }
 
 .foodPic img {
@@ -102,3 +102,6 @@ h1 {
     
 }
 
+.foodInfo {
+    padding: 10px;
+}

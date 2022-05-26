@@ -3,6 +3,10 @@ let menuButton = document.createElement('button')
 let contactButton = document.createElement('button')
 let container = document.querySelector('#content')
 let body = document.querySelector('body')
+let header = document.createElement('div')
+header.setAttribute('class', 'header')
+body.appendChild(header)
+
 
 elementButton.textContent = 'Main'
 elementButton.setAttribute('class', 'main')
@@ -11,9 +15,9 @@ menuButton.setAttribute('class', 'menu')
 contactButton.textContent = 'Contact'
 contactButton.setAttribute('class', 'contact')
 
-body.appendChild(elementButton)
-body.appendChild(menuButton)
-body.appendChild(contactButton)
+header.appendChild(elementButton)
+header.appendChild(menuButton)
+header.appendChild(contactButton)
 
 import {element} from './modules/element'
 import {menu} from './modules/menu'
