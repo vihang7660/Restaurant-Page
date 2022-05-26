@@ -5,8 +5,11 @@ let container = document.querySelector('#content')
 let body = document.querySelector('body')
 
 elementButton.textContent = 'Main'
+elementButton.setAttribute('class', 'main')
 menuButton.textContent = 'Menu'
+menuButton.setAttribute('class', 'menu')
 contactButton.textContent = 'Contact'
+contactButton.setAttribute('class', 'contact')
 
 body.appendChild(elementButton)
 body.appendChild(menuButton)
@@ -33,3 +36,5 @@ contactButton.addEventListener('click', function() {
     container.textContent = ''
     contact()
 })
+
+element()

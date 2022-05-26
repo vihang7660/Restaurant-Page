@@ -1,3 +1,8 @@
+@font-face {
+    font-family: simple;
+    src: url(./modules/GrapeNuts-Regular.ttf);
+}
+
 button {
     height: 34px;
     width: 110px;
@@ -6,4 +11,94 @@ button {
     border: none;
     color: #f8fafc;
     font-weight: 600;
+    cursor: pointer;
 }
+
+.main {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+}
+
+.menu {
+    position: fixed;
+    top: 10px;
+    left: 150px;
+}
+
+.contact {
+    position: fixed;
+    top: 10px;
+    left: 280px;
+}
+
+
+#content {
+    margin-top: 50px;
+}
+
+body {
+    background-image: url('https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg');
+    display: grid;
+    justify-content: center;
+}
+
+.info {
+    display: grid;
+    max-width: 60vw;
+    gap: 40px;
+    justify-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+.menuInfo {
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 60vw;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 22px;
+
+}
+
+.heading1 {
+    font-family: simple;
+    font-size: 52px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.foodPic {
+    /* display: flex; */
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+}
+
+.foodPic img {
+    height: 100%;
+    width: 100%;
+}
+
+.foodItem {
+    display: flex;
+    align-items: center;
+}
+
+.contactBox {
+    max-width: 60vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-family: sans-serif;
+    padding: 20px;
+    
+}
+

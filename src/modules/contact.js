@@ -1,15 +1,21 @@
 let contact = () => {
     let heading = document.createElement('h1')
-    let image = document.createElement('img')
     let container = document.querySelector('#content')
     let box = document.createElement('div')
 
-    heading.textContent = 'Contact'
-    image.setAttribute('src', 'https://images01.nicepage.com/page/64/21/website-design-preview-64211.jpg')
+    heading.textContent = 'Contact Us'
 
+    
+    container.appendChild(heading)
     container.appendChild(box)
-    box.appendChild(heading)
-    box.appendChild(image)
+
+    box.setAttribute('class', 'contactBox')
+
+    box.innerText = `Hours:
+    10:00AM - 10:00PM
+    7 Days a Week
+    
+    Manhattan, Old New York`
 }
 
 export {contact}
